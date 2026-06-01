@@ -20,4 +20,12 @@ function list() {
   return todos;
 }
 
-module.exports = { add, complete, list };
+function remove(id) {
+  const index = todos.findIndex(t => t.id === id);
+  if (index !== -1) {
+    const removed = todos.splice(index, 1)[0];
+    console.log(`🗑️  ลบ: "${removed.title}"`);
+  }
+}
+
+module.exports = { add, complete, list, remove };
