@@ -10,9 +10,11 @@ todoService.list().forEach((t, i) => {
   console.log(`${i + 1}. [${t.done ? 'x' : ' '}] ${t.title}`);
 });
 
+// call service
 todoService.complete(1);
 
 console.log('\n=== หลัง complete ===');
 todoService.list().forEach((t, i) => {
   console.log(`${i + 1}. [${t.done ? 'x' : ' '}] ${t.title}`);
 });
+
