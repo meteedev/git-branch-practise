@@ -1,0 +1,10 @@
+{
+  "name": "todo-app",
+  "version": "0.1.0",
+  "description": "Todo App สำหรับฝึก Git branching",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo 'tests pass'"
+  }
+}
